@@ -1,82 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css_portfoglio.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Mathis Ait Aomar</title>
+  <link rel="stylesheet" href="css_portfoglio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="CV.html">CV</a></li>
-                <li><a href="Projet.html">Projets</a></li>
-                <li><a href="Epreuve E4.xlsx">Veille Technologique</a></li>
-                <li><a href="Stage.html">Stage</a></li>
-                <li><a href="https://github.com/Matmat42">Contact (Github)</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Portfolio | Mathis Ait Aomar</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="Projet.html">Projets</a></li>
+          <li><a href="Epreuve E4.xlsx">Veille Technologique</a></li>
+          <li><a href="Stage.html">Stage</a></li>
+          <li><a href="https://github.com/Matmat42" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="apropos">
+  <main>
+    <section class="section fade-in" id="apropos">
+      <div class="container">
         <h2>À propos de moi</h2>
-        <p>
-            <h4><strong>Mathis 
-                Ait Aomar</strong>
-            </h4>
-        <nav>Etudiant en première année de BTS SIO (Services Informatiques aux Organisations)</nav>
-        <nav>Option SLAM (Solutions Logicielles et Applications Métiers)</nav>
-        <br>
-        <nav>Avant celà, j'ai obtenu mon bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable) avec l'option SIN (Systèmes d'Information et Numérique)</nav>
-        </p>
+        <p><strong>Portfolio | Mathis Ait Aomar</strong>, étudiant en BTS SIO (Option SLAM) passionné par le développement logiciel.</p>
+        <p>Diplômé d’un bac STI2D option SIN, je me spécialise dans les applications web et la programmation orientée objet.</p>
+      </div>
     </section>
 
-    <section id="projets">
-        <h2>Mes projets</h2>
+    <section class="section fade-in delay" id="projets">
+      <div class="container">
+        <h2>Mes Projets</h2>
         <div class="projets-container">
-            <div class="projet">
-                <h3>Projet Netflix</h3>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Description</p>
-                <nav>Création d'un site web similaire à Netflix, avec les mêmes fonctionnalités et des ajouts de film possibles via le site web.</nav>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Compétences acquise</p>
-                <nav>Travaille de groupe en projet avec GitHub/Développement côté serveur et côté client (PHP) </nav>
-            </div>
-            <div class="projet">
-                <h3>Projet Monopoly</h3>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Description</p>
-                <nav>Création d'un jeux Monopoly, avec des fonctionnalités différentes (modifié selon les consignes du professeur).</nav>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Compétences acquise</p>
-                <nav>Travaille de groupe en projet avec GitHub/Développement en python via les concepts de la Programmation Orientée Objet. </nav>
-            </div>
-            <div class="projet">
-                <h2>Veille Technologique</h2>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Description</p>
-                <nav>Veille technologique sur la bibliothèque React sur le language de programmation Javascript</nav>
-                <br>
-                <p style="color: rgb(0, 0, 0); font-weight: bold;">Compétences acquise</p>
-                <nav>Certification React, amélioration de mon niveau en Javascript </nav>
-            </div>
-            
-            
+          <div class="projet-card">
+            <h3>🎬 Projet Netflix</h3>
+            <p><strong>Description :</strong> Création d’un site similaire à Netflix, avec ajout de films via une interface web.</p>
+            <p><strong>Compétences :</strong> PHP, GitHub, développement client / serveur.</p>
+          </div>
+          <div class="projet-card">
+            <h3>🎲 Projet Monopoly</h3>
+            <p><strong>Description :</strong> Création d’un jeu Monopoly personnalisé selon les consignes du professeur.</p>
+            <p><strong>Compétences :</strong> Python, POO, collaboration via GitHub.</p>
+          </div>
+          <div class="projet-card">
+            <h3>📚 Veille Technologique</h3>
+            <p><strong>Sujet :</strong> La bibliothèque React.js et son évolution dans le développement frontend.</p>
+            <p><strong>Compétences :</strong> Certification React, approfondissement JS moderne.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="contact">
+    <section class="section fade-in delay-2" id="contact">
+      <div class="container">
         <h2>Contact</h2>
-        <p>Vous pouvez me contacter à cette adresse mail : <a href="mailto:mathisb634@gmail.com">mathisb634@gmail.com</a></p>
+        <p>📧 <a href="mailto:mathisb634@gmail.com">mathisb634@gmail.com</a></p>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Mathis Ait Aomar Tout droits réservés.</p>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mathis Ait Aomar. Tous droits réservés.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
