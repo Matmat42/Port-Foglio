@@ -4,114 +4,175 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio | Mathis Ait Aomar</title>
-  <link rel="stylesheet" href="css_portfoglio.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Import Font Awesome pour les icônes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css_portfoglio.css">
 </head>
+
 <body>
 
-  <header>
+<header class="hero">
+  <div class="container">
+    <h1>Mathis Ait Aomar</h1>
+    <p class="subtitle">Étudiant BTS SIO SLAM — Développeur Web & Logiciel</p>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="Stage.html">Stage</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/Matmat42" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+<main>
+
+
+  <section class="section fade-in" id="apropos">
     <div class="container">
-      <h1>Portfolio | Mathis Ait Aomar</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="CV.html">CV</a></li>
-          <li><a href="Projet.html">Projets</a></li>
-          <li><a href="Epreuve E4.xlsx">Veille Technologique</a></li>
-          <li><a href="https://github.com/Matmat42" target="_blank">Github</a></li>
-        </ul>
-      </nav>
+      <h2>À propos de moi</h2>
+      <p>
+        Je m’appelle <strong>Mathis Ait Aomar</strong> et je suis étudiant en
+        <strong>deuxième année de BTS Services Informatiques aux Organisations (SIO),
+        option Solutions Logicielles et Applications Métiers (SLAM)</strong>.
+        Je m’intéresse au développement d’applications web et à la programmation orientée objet.
+      </p>
+      <br>
+      <p>
+        J’ai obtenu un <strong>baccalauréat Sciences et Technologies de l’Industrie et du
+        Développement Durable (STI2D), option Systèmes d’Information et Numérique (SIN)</strong>.
+        <br>
+        Cette formation m’a permis d’acquérir des bases techniques que j’applique aujourd’hui
+        dans des projets concrets.
+      </p>      
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="section fade-in" id="apropos">
-      <div class="container">
-        <h2>À propos de moi</h2>
-        <p><strong>Portfolio | Mathis Ait Aomar</strong>, étudiant en BTS SIO (Option SLAM) passionné par le développement logiciel.</p>
-        <p>Diplômé d’un bac STI2D option SIN, je me spécialise dans les applications web et la programmation orientée objet.</p>
-      </div>
-    </section>
-
-    <!-- SECTION COMPÉTENCES -->
-    <section class="section fade-in delay" id="competences">
-      <div class="container">
-        <h2>Mes Compétences</h2>
-        <div class="skills-container">
-          <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML5</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS3</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-php"></i>
-            <p>PHP</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <p>Python</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <p>MySQL</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
-            <p>Git / GitHub</p>
-          </div>
-          <div class="skill-card">
-            <i class="fa-brands fa-react"></i>
-            <p>React.js</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section fade-in delay" id="projets">
-      <div class="container">
-        <h2>Mes Projets</h2>
-        <div class="projets-container">
-          <div class="projet-card">
-            <h3>🎬 Projet Netflix</h3>
-            <p><strong>Description :</strong> Création d’un site similaire à Netflix, avec ajout de films via une interface web.</p>
-            <p><strong>Compétences :</strong> PHP, GitHub, développement client / serveur.</p>
-          </div>
-          <div class="projet-card">
-            <h3>🎲 Projet Monopoly</h3>
-            <p><strong>Description :</strong> Création d’un jeu Monopoly personnalisé selon les consignes du professeur.</p>
-            <p><strong>Compétences :</strong> Python, POO, collaboration via GitHub.</p>
-          </div>
-          <div class="projet-card">
-            <h3>📚 Veille Technologique</h3>
-            <p><strong>Sujet :</strong> La bibliothèque React.js et son évolution dans le développement frontend.</p>
-            <p><strong>Compétences :</strong> Certification React, approfondissement JS moderne.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section fade-in delay-2" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>📧 <a href="mailto:mathisb634@gmail.com">mathisb634@gmail.com</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+  <section class="section fade-in delay" id="projets">
     <div class="container">
-      <p>&copy; 2025 Mathis Ait Aomar. Tous droits réservés.</p>
+      <h2>Mes Projets</h2>
+
+      <div class="projets-container">
+
+        <div class="projet-card highlight">
+          <h3>Boulangerie du Totem — MGM</h3>
+          <span class="badge">Projet réel</span>
+
+          <p>
+            <strong>MGM – Maison Gourmande et Moderne</strong> est un site vitrine professionnel réalisé pour
+            une boulangerie artisanale située à <strong>Lorette (Auvergne-Rhône-Alpes)</strong>.
+          </p>
+
+          <ul>
+            <li> Présentation complète des <strong>produits </strong>(sucrés, salés et pains)</li>
+            <li> Gestion des <strong>horaires</strong> et informations essentiels</li>
+            <li> Section <strong>événements & commandes spéciales</strong></li>
+            <li> Intégration des <strong>avis Google</strong></li>
+            <li> Boutons de contact et appel rapide</li>
+          </ul>
+
+          <p><strong>Technologies utilisées :</strong></p>
+          <p class="tech">HTML • CSS • JavaScript •/p>
+
+          <p class="objectif">
+             Objectif : proposer une expérience claire, moderne et accessible pour une clientèle locale.
+          </p>
+        </div>
+
+        <div class="projet-card">
+          <h3>WoodyCraftWeb — Site e-commerce (Laravel)</h3>
+          <span class="badge">Projet scolaire</span>
+        
+          <p>
+            <strong>WoodyCraft</strong> est un site e-commerce pour la vente de <strong>puzzles 3D</strong>.
+            Les utilisateurs peuvent consulter les produits, gérer leur panier et passer commande facilement.
+          </p>
+        
+          <ul>
+            <li>Navigation par catégories et pages produits détaillées</li>
+            <li>Gestion du panier et des commandes</li>
+            <li>Connexion obligatoire et gestion des adresses</li>
+            <li>Paiement sécurisé via PayPal ou chèque (facture PDF)</li>
+          </ul>
+        
+          <p>
+            Projet réalisé avec <strong>méthodologie Agile (Kanban)</strong>, modélisation <strong>UML</strong>
+            et gestion de base de données.
+          </p>
+        
+          <p class="tech">Laravel • PHP • MySQL • HTML • CSS • GitLab</p>
+        </div>
+        
+
+
+        <div class="projet-card">
+          <h3> Plateforme type Netflix</h3>
+          <span class="badge">Projet scolaire</span>
+          <p>
+            Création d’un site web inspiré de Netflix avec gestion dynamique de films via une interface web.
+          </p>
+          <p><strong>Compétences :</strong> PHP, MySQL, Git, architecture client/serveur</p>
+        </div>
+
+
+
+        <div class="projet-card">
+          <h3> Jeu Monopoly (Python)</h3>
+          <span class="badge">Projet scolaire</span>
+          <p>
+            Développement d’un Monopoly personnalisé en Python selon un cahier des charges précis.
+          </p>
+          <p><strong>Compétences :</strong> Python, POO, GitHub, travail en groupe/p>
+        </div>
+
+
+
+        <div class="projet-card">
+          <h3> Veille Technologique — React.js</h3>
+          <span class="badge">Projet Personnel</span>
+          <p>
+            Étude de l’évolution de React.js et de son importance dans le développement front-end moderne, actualité et son impact dans le monde de l'informatique.
+          </p>
+          <p><strong>Compétences :</strong> JavaScript moderne, frameworks, analyse technologique</p>
+        </div>
+
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="section fade-in delay-2" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+  
+      <ul class="contact-list">
+        <li>
+          📧 Email : <a href="mailto:mathisb634@gmail.com">mathisb634@gmail.com</a>
+        </li>
+        <li>
+          💻 GitHub : <a href="https://github.com/Matmat42" target="_blank">github.com/Matmat42</a>
+        </li>
+        <li>
+          📱 LinkedIn : <a href="https://www.linkedin.com/in/mathis-ait-aomar/" target="_blank">linkedin.com/in/mathis-ait-aomar</a>
+        </li>
+      </ul>
+  
+    </div>
+  </section>
+  
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Mathis Ait Aomar — Portfolio BTS SIO SLAM</p>
+  </div>
+</footer>
 
 </body>
 </html>
