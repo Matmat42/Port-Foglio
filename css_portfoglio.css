@@ -315,3 +315,145 @@ footer {
 #contact h2 {
   text-align: center;
 }
+
+/* ===========================
+   SECTION COMPÉTENCES BTS SIO
+=========================== */
+
+.competences-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.competence-card {
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+  position: relative;
+}
+
+.competence-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, transparent, var(--primary), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.competence-card:hover::before {
+  opacity: 1;
+}
+
+.competence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(124,124,255,0.4);
+}
+
+.competence-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.competence-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill span {
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 4px;
+  color: #e5e7eb;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  animation: loadBar 1.4s ease forwards;
+}
+
+/* Définir le niveau de chaque compétence (en %) */
+.progress.php          { width: 85%; }
+.progress.mysql        { width: 80%; }
+.progress.git          { width: 70%; }
+.progress.arch         { width: 75%; }
+
+.progress.python       { width: 90%; }
+.progress.poo          { width: 80%; }
+.progress.github       { width: 70%; }
+.progress.teamwork     { width: 85%; }
+
+.progress.js           { width: 90%; }
+.progress.frameworks   { width: 80%; }
+.progress.analysis     { width: 75%; }
+
+@keyframes loadBar {
+  from { width: 0; }
+}
+
+.tech-skills {
+  margin-top: 10px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  color: #e5e7eb; /* blanc doux */
+}
+
+.bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  animation: loadBar 1.4s ease forwards;
+}
+
+/* Définir le niveau de chaque compétence */
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 75%; }
+
+@keyframes loadBar {
+  from { width: 0; }
+}

@@ -2,61 +2,110 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Stage BTS SIO - Site vitrine MGM</title>
+  <title>Stage BTS SIO – Site vitrine MGM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.7;
+    :root {
+      --primary: #7c7cff;
+      --secondary: #4f46e5;
+      --glass: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --blur: blur(18px);
+    }
+
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #020617, #05070d, #000);
+      color: #e5e7eb;
+      line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(120deg, #1e1b4b, #020617);
-      padding: 60px 20px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      background: linear-gradient(120deg, #020617, #1e1b4b, #020617);
+      background-size: 300% 300%;
+      animation: gradientMove 16s ease infinite;
+      padding: 60px 20px;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
       margin-bottom: 10px;
     }
 
     header p {
-      opacity: 0.9;
+      opacity: 0.85;
+      font-size: 1.1rem;
     }
 
     section {
-      padding: 50px 20px;
       max-width: 1000px;
-      margin: auto;
+      margin: 60px auto;
+      padding: 40px;
+      background: var(--glass);
+      backdrop-filter: var(--blur);
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
     }
 
     h2 {
-      color: #a5b4fc;
+      font-size: 2rem;
       margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--primary), #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      margin-bottom: 15px;
+      opacity: 0.9;
     }
 
     ul {
       margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     .info-box {
       background: rgba(255,255,255,0.05);
-      border-left: 4px solid #6366f1;
+      border-left: 4px solid var(--secondary);
       padding: 20px;
-      margin: 30px 0;
+      margin: 25px 0;
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      background-color: #020617;
+      background: rgba(0,0,0,0.4);
       font-size: 0.9rem;
       opacity: 0.8;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
 </head>
@@ -65,101 +114,140 @@
 
 <header>
   <h1>Stage BTS SIO SLAM</h1>
-  <p>Création d’un site vitrine professionnel</p>
+  <p>Conception, développement et mise en ligne d’un site vitrine professionnel</p>
 </header>
 
-<section>
-  <h2>Présentation de l’entreprise</h2>
-  <p>
-    <strong>Boulangerie du Totem – MGM (Maison Gourmande et Moderne)</strong> est une boulangerie artisanale
-    située au <strong>57 Rue Jean Jaurès, 42420 Lorette</strong>, en région Auvergne-Rhône-Alpes.
-  </p>
-  <p>
-    L’entreprise propose des produits artisanaux variés : pains, viennoiseries, pâtisseries,
-    produits salés et commandes spéciales pour événements.
-  </p>
-</section>
+  <section>
+    <h2>Présentation de l’entreprise</h2>
+    <p>
+      <strong>Boulangerie du Totem – MGM (Maison Gourmande et Moderne)</strong> est une boulangerie artisanale
+      implantée au <strong>57 rue Jean Jaurès, 42420 Lorette</strong>, en région Auvergne-Rhône-Alpes.
+    </p>
+    <p>
+      L’entreprise propose une large gamme de produits artisanaux : pains traditionnels et spéciaux,
+      viennoiseries, pâtisseries, produits salés ainsi que des commandes personnalisées
+      pour des événements tels que anniversaires ou fêtes.
+    </p>
+  </section>
 
-<section>
-  <h2>Contexte du stage</h2>
-  <p>
-    Dans le cadre de mon <strong>BTS SIO option SLAM</strong>, j’ai effectué un stage ayant pour objectif
-    la <strong>création d’un site vitrine professionnel</strong> pour la boulangerie MGM.
-  </p>
-  <p>
-    L’entreprise ne disposait pas de site web moderne pour présenter ses produits et informer les clients.
-    Le projet visait donc à améliorer sa visibilité et sa communication numérique.
-  </p>
-</section>
+  <section>
+    <h2>Contexte et objectifs du stage</h2>
+    <p>
+      Dans le cadre de mon <strong>BTS Services Informatiques aux Organisations (SIO),
+      option Solutions Logicielles et Applications Métiers (SLAM)</strong>,
+      j’ai effectué un stage dont l’objectif principal était la
+      <strong>création d’un site vitrine professionnel</strong> pour la boulangerie MGM.
+    </p>
+    <p>
+      Avant ce projet, l’entreprise ne disposait pas d’un site web moderne permettant
+      de présenter ses produits et ses informations essentielles.
+      Ce stage avait donc pour but d’
+      <strong>améliorer la visibilité numérique</strong> de la boulangerie
+      et de faciliter l’accès à l’information pour la clientèle locale.
+    </p>
+  </section>
 
-<section>
-  <h2>Présentation du projet réalisé</h2>
-  <div class="info-box">
-    <p><strong>Projet :</strong> Site vitrine « Boulangerie du Totem – MGM »</p>
-    <p><strong>Type :</strong> Site web vitrine professionnel</p>
-    <p><strong>Public visé :</strong> Clients locaux (particuliers, familles, étudiants...)</p>
-  </div>
+  <section>
+    <h2>Présentation du projet réalisé</h2>
 
-  <p>Le site inclu :</p>
-  <ul>
-    <li> une présentation des produits sucrés, salés et pains</li>
-    <li> une mise en avant des valeurs de l’entreprise</li>
-    <li> un affichage récent des horaires d’ouverture</li>
-    <li> une présentation des événements et commandes spéciales</li>
-    <li> un accès rapide au contact de la boulangerie (téléphone)</li>
-  </ul>
-</section>
+    <div class="info-box">
+      <p><strong>Nom du projet :</strong> Site vitrine « Boulangerie du Totem – MGM »</p>
+      <p><strong>Type :</strong> Site web vitrine professionnel</p>
+      <p><strong>Objectif principal :</strong> Valoriser l’image de l’entreprise et son savoir-faire -> attiré plus de clientèle</p>
+      <p><strong>Public visé :</strong> Clients locaux et passants</p>
+    </div>
 
-<section>
-  <h2>Missions réalisées</h2>
-  <ul>
-    <li>Analyse des besoins du client</li>
-    <li>Conception de la structure du site en fonction des volontés du patron (design)</li>
-    <li>Intégration HTML / CSS / JSS</li>
-    <li>Création d’un design clair et responsive(adaptés à tous les écrans)</li>
-    <li>Mise en valeur des produits et des informations essentielles</li>
-    <li>Tests d’affichage sur différents supports (ordinateur,tablette,téléphone)</li>
-  </ul>
-</section>
+    <ul>
+      <li>Présentation détaillée des produits (pains, viennoiseries, pâtisseries, salés)</li>
+      <li>Mise en avant des valeurs artisanales et de la qualité des produits</li>
+      <li>Affichage clair et à jour des horaires d’ouverture</li>
+      <li>Présentation des événements et des commandes spéciales</li>
+      <li>Accès rapide aux coordonnées de la boulangerie (appel téléphonique)</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Technologies utilisées</h2>
-  <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JS</li>
-    <li>Outils de développement web : -navigateur
-                                      -éditeur de code (Visual Studio Code)
+  <section>
+    <h2>Compétences BTS SIO utilisées</h2>
+    <ul>
+      <li>
+        <strong>Travailler en mode projet :</strong>
+        analyse du besoin client, organisation des tâches (Kanban) et respect des objectifs fixés.
+      </li>
+      <li>
+        <strong>Développer la présence en ligne d’une organisation :</strong>
+        conception d’un site valorisant les images des produits et les valeurs de la Boulangerie du Totem (l’entreprise) donc celles du groupe MGM (Maison Gourmande et Moderne).
+      </li>
+      <li>
+        <strong>Mettre à disposition un service informatique :</strong>
+        hebergement d’un site vitrine fonctionnel, testé sous différents supports(smartphones,tablettes,ordinateurs) et prêt à l’utilisation.
+      </li>
+      <li>
+        <strong>Communication professionnelle :</strong>
+        échanges réguliers avec le responsable et prise en compte de ses retours.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Missions réalisées et contribution personnelle</h2>
+    <ul>
+      <li>Analyse des besoins du client à travers des échanges directs avec le responsable</li>
+      <li>Rédaction des fonctionnalités attendues et définition des priorités</li>
+      <li>Conception de l’arborescence et de la structure des pages</li>
+      <li>Développement du site en HTML5, CSS3 et JavaScript</li>
+      <li>Création d’un design moderne, clair et responsive</li>
+      <li>Tests fonctionnels et d’affichage sur ordinateurs, tablettes et smartphones</li>
+      <li>Présentation du site au client et intégration de ses retours</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technologies et outils utilisés</h2>
+    <ul>
+      <li>HTML5 : structure et contenu des pages</li>
+      <li>CSS3 : mise en forme, responsive design et animations</li>
+      <li>JavaScript : interactions et améliorations ergonomiques</li>
+      <li>Visual Studio Code : environnement de développement</li>
+      <li>Navigateurs web : tests et validation du rendu</li>
+    </ul>
+  </section>
+
+  <section>
+    <li>
+      <strong>Les eléments à mettre en avant :</strong>
+      <br>
+      <strong>Produits frais et faits maison</strong>
+      <br>
+      <strong>Accueil chaleureux et service rapide</strong>
+      <br>
+      <strong>Prix accessibles et généreux</strong>
+      <br>
+      <strong>Créations innovantes pour toutes les occasions</strong>
+      <br>
+      <strong>Contact Affiché Clairement (04 77 93 90 83) — Du lundi au dimanche</strong>
     </li>
-  </ul>
-</section>
+  </section>
 
 <section>
-  <h2>Compétences développées</h2>
-  <ul>
-    <li>Développement web</li>
-    <li>Organisation d’un projet web (design,fonctionnalité)</li>
-    <li>Respect d’un cahier des charges du patron</li>
-    <li>Autonomie et rigueur</li>
-    <li>Communication avec les employés et le patron</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Bilan du stage</h2>
+  <h2>Bilan personnel du stage</h2>
   <p>
-    Ce stage m’a permis de mettre en pratique mes compétences en développement web,
-    de travailler sur un projet réel et de connaitre les potentielles attentes d’un client.
+    Ce stage m’a permis de consolider mes compétences techniques en développement web
+    dans un contexte professionnel réel, avec des contraintes de délais
+    et des attentes précises du client.
   </p>
   <p>
-    Il a renforcé mon intérêt pour le développement d’applications web
-    et a confirmé mon projet professionnel dans le domaine de l’informatique.
+    Il m’a également permis de développer mon autonomie, ma rigueur
+    et ma capacité à travailler en mode projet.
+    Cette expérience a confirmé mon intérêt pour le développement web
+    et mon projet professionnel dans le domaine de l’informatique.
   </p>
 </section>
 
 <footer>
   <p>© 2026 – Stage BTS SIO SLAM | Mathis Ait Aomar</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
