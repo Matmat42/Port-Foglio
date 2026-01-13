@@ -457,3 +457,33 @@ footer {
 @keyframes loadBar {
   from { width: 0; }
 }
+
+.projet-images {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.projet-images img {
+  width: 100%;
+  max-width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(124,124,255,0.4);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projet-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
